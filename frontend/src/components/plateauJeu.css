@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scorePanel {
+  height: 100vh;
+  width: 8.5rem;
+  /* Hauteur du panneau des scores */
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 3;
+}
+
+.plateau {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.jokerslot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.5rem;
+  width: 100vw;
+  /* Hauteur de la section des jokers */
+  background-color: lightgreen;
+}
+
+.playerhand {
+  height: 6.5rem;
+  width: 100vw;
+  /* La main du joueur prend tout l'espace restant */
+  display: flex;
+  justify-content: center;
+  /* Centrer horizontalement */
+  align-items: center;
+  /* Centrer verticalement */
+  background-color: lightcoral;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+}
+
+.bottomArea {
+  height: 100px;
+  /* Hauteur de l'espace en bas */
+  background-color: lightyellow;
+}
+
+.slothands {
+  height: 80%;
+  width: 80%;
+  margin-left: 7.5rem;
+}
+
+.scoretoreach {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+  height: 6.5rem;
+  background-color: bisque;
+}
+
+.reachscore {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.playerscorep {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  background-color: yellowgreen;
+  text-align: center;
+}
+
+.playerscore {
+  background-color: yellowgreen;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  height: 2rem;
+  text-align: center;
+}
+
+.combinaisons {
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+  height: 6.5rem;
+}
+
+.combname {
+  text-align: center;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  height: 5rem;
+}
+
+.affichagepoints {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.attempts {
+  display: flex;
+  background-color: aqua;
+  align-items: center;
+  height: 4rem;
+  justify-content: space-around;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.carte {
+  height: 100%;
+  padding-right: 0.5rem;
+}
+
+.togglecarte{
+  transform: translateY(-10px);
+}
